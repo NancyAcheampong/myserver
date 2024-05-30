@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oops not Found | Ewura Adjoa</title>
+  <style>
+    *,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  /* transition: all 250ms ease; */
+}
+
+:root {
+  /* brand-colors */
+  --okw-brand-color1: #000000;
+  --okw-brand-color2: #1aff00;
+  --okw-brand-color3: #ffffff;
+
+  /* Border sizes */
+  --okw-border-radius-lg: 30px;
+  --okw-border-radius-md: 20px;
+  --okw-border-radius-sm: 15px;
+  --okw-border-radius-vsm: 10px;
+  --okw-border-radius-rd: 50%;
+
+  /*sizes */
+  --okw-font-size-10: 10px;
+  --okw-font-size-12: 12px;
+  --okw-font-size-14: 14px;
+  --okw-font-size-16: 16px;
+  --okw-font-size-18: 18px;
+  --okw-font-size-20: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--okw-brand-color2);
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+.root {
+  width: 100vw;
+  /* max-width: 1720px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+
+.logoWrapper{
+   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.logo{
+  height: 100px;
+  width: 100px;
+  min-height: 100px;
+  border-radius: 46% 54% 72% 28% / 68% 50% 50% 32%;
+  background: linear-gradient(45deg, #23ae6d, #e5ff00);
+  /* background: linear-gradient(45deg, var(--edk-brand-blue), var(--edk-brand-green)); */
+  align-self: self-start;
+  animation: animateGlow 1s ease infinite;
+  background-size: 200% 200%;
+
+}
+
+.messageWrapper{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  gap: 20px;
+}
+
+.heroText{
+  font-size: calc(var(--okw-font-size-10)*10);
+  font-weight: bold;
+  text-align: left;
+
+}
+
+.message{
+  font-size: calc(var(--okw-font-size-10)*4);
+  font-weight: 600;
+  text-align: left;
+}
+
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.back{
+  font-size: calc(var(--okw-font-size-20));
+}
+
+@media screen and (max-width: 600px) {
+  .root {
+    width: 95%;
+  }
+  .messageWrapper{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.logoWrapper{
+   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.heroText{
+  font-size: calc(var(--okw-font-size-10)*7);
+  font-weight: bold;
+  text-align: left;
+}
+
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="root" >
+    <div class="messageWrapper">
+     <span class="heroText" >
+      Not Found
+     </span>
+     <a class="back" href="/">Back</a>
+    </div>
+  </div>
+</body>
+</html>

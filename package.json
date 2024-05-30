@@ -1,0 +1,17 @@
+{
+  "name": "myself",
+  "version": "1.0.0",
+  "description": "luggs",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "dev": "node index.mjs",
+    "start": "node index.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.11.5"
+    
+  }
+}
